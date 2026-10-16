@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Thor Nav Fix</string>
+    <string name="accessibility_service_description">Automatically hides the redundant navigation gesture bar on the secondary screen when waking the device.</string>
+
+    <!-- Main Screen Header -->
+    <string name="app_description">Hides the secondary screen navigation bar automatically after sleep/wake.</string>
+
+    <!-- Status & Permissions Section -->
+    <string name="section_status_and_permissions">Status &amp; Permissions</string>
+    <string name="label_write_secure_settings">Write Secure Settings:</string>
+    <string name="status_granted">Granted</string>
+    <string name="status_not_granted">Not Granted</string>
+    <string name="status_checking">Checking…</string>
+    <string name="btn_grant_shizuku">Grant via Shizuku (1-Tap, No Root)</string>
+    <string name="btn_grant_root">Grant via Root (Temporary / 1-Time)</string>
+    <string name="btn_copy_adb">Copy ADB Command</string>
+    <string name="adb_command_clip_label">ADB Command</string>
+    <string name="adb_grant_command" translatable="false">adb shell pm grant %1$s android.permission.WRITE_SECURE_SETTINGS</string>
+    <string name="msg_adb_copied">ADB command copied to clipboard!</string>
+
+    <string name="label_wake_watcher_service">Wake Watcher Service:</string>
+    <string name="status_running">Running</string>
+    <string name="status_disabled">Disabled</string>
+    <string name="btn_accessibility_settings">Accessibility Settings</string>
+    <string name="btn_enable_accessibility">Enable in Accessibility</string>
+
+    <!-- Quick Actions Section -->
+    <string name="section_quick_actions">Quick Actions</string>
+    <string name="desc_quick_actions">Manually trigger the hide routine immediately.</string>
+    <string name="btn_apply_fix_now">Apply Fix Now</string>
+    <string name="msg_fix_success">Secondary nav bar hidden successfully!</string>
+    <string name="msg_fix_failed">Failed to toggle setting</string>
+
+    <!-- Automation Triggers Section -->
+    <string name="section_automation_triggers">Automation Triggers</string>
+    <string name="trigger_screen_wake">Trigger on Screen Wake (Display On)</string>
+    <string name="trigger_device_unlock">Trigger on Device Unlock (User Present)</string>
+    <string name="trigger_device_boot">Trigger on Device Boot</string>
+
+    <!-- Root Grant Dialog -->
+    <string name="dialog_root_title">One-Time Root Grant</string>
+    <string name="dialog_root_message">Root access is ONLY required once to grant the standard Android permission:\n\npm grant %1$s android.permission.WRITE_SECURE_SETTINGS\n\nOnce granted, root is never used again during normal operation. The app runs completely non-invasively in standard user space.\n\nDo you want to proceed with this root grant?</string>
+    <string name="dialog_root_confirm">Grant via Root</string>
+    <string name="msg_root_granted">Permission granted via Root! Root is no longer needed.</string>
+    <string name="msg_root_failed">Root command failed. Check Magisk/KernelSU prompt.</string>
+
+    <!-- Shizuku Dialog & Messages -->
+    <string name="dialog_shizuku_title">Shizuku Not Running</string>
+    <string name="dialog_shizuku_message">Shizuku service is not running.\n\nTo use Shizuku without root:\n1. Install Shizuku from Play Store or GitHub.\n2. Open Settings → Developer Options → Wireless Debugging.\n3. Pair and start Shizuku.\n4. Return here and tap this button again.</string>
+    <string name="msg_shizuku_denied">Shizuku permission denied</string>
+    <string name="msg_shizuku_granted">Permission granted via Shizuku!</string>
+    <string name="msg_shizuku_failed">Shizuku grant command failed</string>
+    <string name="msg_shizuku_request_failed">Failed to request Shizuku permission: %1$s</string>
+
+    <!-- Quick Settings Tile -->
+    <string name="tile_label">Thor Nav Fix</string>
+    <string name="msg_tile_fix_success">Nav bar hidden</string>
+    <string name="msg_tile_fix_failed">Failed to apply fix</string>
+
+    <!-- Common Dialog Actions & General -->
+    <string name="action_ok">OK</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="unknown_error">Unknown error</string>
+</resources>

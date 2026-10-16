@@ -1,0 +1,34 @@
+root = true
+
+
+[*.{kt,kts}]
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+max_line_length = 100
+
+ij_kotlin_allow_trailing_comma = true
+ij_kotlin_allow_trailing_comma_on_call_site = true
+ij_kotlin_imports_layout = *,android.,androidx.,com.,org.,java.,kotlin.,^
+ij_kotlin_indent_before_arrow_on_new_line = false
+ij_kotlin_line_break_after_multiline_when_entry = true
+ij_kotlin_packages_to_use_import_on_demand = kotlinx.android.synthetic.**
+
+ktlint_experimental = enabled
+ktlint_annotation_handle_annotations_with_parameters_same_as_annotations_without_parameters = [unset]
+ktlint_argument_list_wrapping_ignore_when_parameter_count_greater_or_equal_than = 8
+ktlint_chain_method_rule_force_multiline_when_chain_operator_count_greater_or_equal_than = 4
+ktlint_class_signature_rule_force_multiline_when_parameter_count_greater_or_equal_than = unset
+ktlint_code_style = android_studio
+ktlint_enum_entry_name_casing = upper_or_camel_cases
+ktlint_function_naming_ignore_when_annotated_with = Composable
+ktlint_function_signature_body_expression_wrapping = default
+ktlint_function_signature_rule_force_multiline_when_parameter_count_greater_or_equal_than = unset
+ktlint_ignore_back_ticked_identifier = true
+ktlint_property_naming_constant_naming = screaming_snake_case
+ktlint_standard_max_line_length = 100
+ktlint_standard_filename = enabled
+ktlint_standard_multiline-expression-wrapping = disabled
+ktlint_standard_no-unused-imports = enabled
+ktlint_standard_class-signature = disabled
